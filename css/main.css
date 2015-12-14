@@ -52,7 +52,8 @@ textarea {
 }
 
 ul,li,h2{
-    margin: 0
+    margin: 0;
+    padding: 0;
 }
 
 ul{
@@ -71,9 +72,10 @@ h1,h2,h3,a,p,strong{
 h2{
     font-size: 40px;
     font-weight: 300;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
     background: url(../img/underline.png) center bottom no-repeat;
 }
+
 
 body{
     
@@ -132,9 +134,135 @@ header h2{
 }
 
 
+#info{
+    height: 380px;
+    background-color: #fac910;
+}
+
+#info .column{
+    float: left;
+    width: 25%;
+    margin-right: 12%;
+    margin-top: 60px;
+}
+
+#info .column:last-child{
+    margin-right: 0;
+}
+
+#info .column img{
+    display: block;
+    margin: 0 auto;
+}
+
+#info .column h3,
+#info .column p{
+    text-align: center;
+}
+
+#specials{
+    width: 100%;
+    margin-bottom: 100px;
+    
+}
+
+#specials h2{
+    margin-top: 80px;
+    text-align: center;
+}
+
+#specials ul{  
+    margin-top: 55px;
+    
+
+}
+
+#specials ul li{
+    float: left;
+    width: 505px;
+    height: 100%;
+    text-align: center;
+}
+
+#specials ul li .dish{
+    width: 50%;
+    height: 253px;
+    background: #f8f8f8;
+}
+#specials ul li .dish.right{
+    float: right;
+}
+
+#specials ul li .dish.left{
+    float: left;
+}
+
+#specials ul li img{
+    width: 50%;
+    height: 100%;
+}
+
+#about{  
+    height: 967px;
+    background: url(../img/about.jpg) no-repeat;
+    background-size: cover;
+}
 
 
+#about h2, #about p{
+    
+    text-align: center;
+    width: 605px;
+}
 
+#about p{
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 54px;
+    letter-spacing: -0.03em;
+}
+
+#about h2{
+    float: left;
+    margin-top: 220px;
+    margin-bottom: 55px;
+    display: block;
+}
+
+#menu{
+    height: 960px;
+}
+
+#menu h2{
+    margin-top: 65px;
+    margin-bottom: 50px;
+    text-align: center;
+
+    display:block;
+}
+
+#menu ul{
+    //center this shit
+    padding: 0 auto;
+}
+#menu ul li{
+    float: left;
+    margin-right: 30px;
+    padding: 10px;
+}
+
+#menu ul li:last-child{
+    margin-right: 0;
+}
+
+#menu ul li.active{
+    border: 1px solid #3c3c3c;
+}
+
+
+#menu ul li a{
+    font-size: 18px;
+}
 
 
 
@@ -192,6 +320,7 @@ header h2{
 .clearfix:after {
     content: " ";
     display: table;
+    clear: both;
 }
 
 .clearfix:after {
