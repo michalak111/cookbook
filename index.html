@@ -114,7 +114,7 @@
         <section id="menu" class="clearfix">
             <h2 class="title">Menu</h2>
             
-            <ul class="clearfix">
+            <ul id="menu-btn" class="clearfix">
               <li class="active"><a href="#">Starters</a></li>
               <li><a href="#">Main Dishes</a></li>
               <li><a href="#">Desserts</a></li>
@@ -164,38 +164,37 @@
                 <li><p class="dish-name">SMOKED RICOTTA TERRINE   ........................................................... 12$</p>
                 <p class="dish-desc">ricotta, shallots, cheddar, capers</p>
                 </li>
-                <li><p class="dish-name">SMOKED RICOTTA TERRINE   ........................................................... 12$</p>
-                <p class="dish-desc">ricotta, shallots, cheddar, capers</p>
-                </li>
+               
 
             </ul>
 
        </section>
 
-       <section id="contact">
+       <section id="contact" class="clearfix">
             <h2 class="title">Contact</h2>
-            <div id="adress">
+           <div class="contact-wrapper">
+             <div id="adress">
                 <h3>Veggie</h3>
                 <p>3428 Magnolia Avenue</p>
                 <p>Hackettstown, NJ 07840</p>
             </div>
-            <div id="contact">
+            <div id="contact-data">
                 <h3>Reservations</h3>
                 <p>reservations@vegggie.com</p>
                 <p>+48 202-555-0114</p>
             </div>
-            <form id="contact-form">
-                <div class="row">
-                    <label for="name"><h3>Name</h3></label>
-                    <input id="name" class="input" name="name" type="text" value=""/>
+           </div>
+            <form id="contact-form" class="clearfix">
+              <h3>Contact form</h3>
+                <div class="row name">
+                    <input id="name" class="input" name="name" type="text" value="" placeholder="Name"/>
                 </div>
-                <div class="row">
-                    <label for="email"><h3>Your email</h3></label>
-                    <input id="email" class="input" name="email" type="text" value=""/>
+                <div class="row email">
+                    <input id="email" class="input" name="email" type="text" value="" placeholder="Email"/>
                 </div>
-                <div class="row">
-                    <label for="message"><h3>Message</h3></label>
-                    <textarea id="message" class="input" name="message"></textarea>
+                <div class="row message clearfix">
+                    
+                    <input id="message" class="input" name="message" placeholder="Message"></input>
                 </div>
                 <input id="submit_button" type="submit" value="Send" />
             </form>
